@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Convert</title>
+</head>
+<body>
+
+    <div class="content">
+        <h1 class="content__header">RGB TO HEX</h1>
+        <div class="values">
+            <input type="text" maxlength="3" placeholder="R">
+            <input type="text" maxlength="3" placeholder="G">
+            <input type="text" maxlength="3" placeholder="B">
+        </div>
+        <div class="hexcode">HEX:
+            <div>
+                <span class="copyToClipboard"></span>
+                <span onclick="copyToClipboard(event)" id="hex"></span>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

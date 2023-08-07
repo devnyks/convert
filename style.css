@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@100;200;300;400;500;600;700;800&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans Mono', monospace;
+    transition: 300ms all;
+}
+
+body {
+    background: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    width: 300px;
+    height: 550px;
+    background: #272829;
+    padding: 35px 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.content .content__header {
+    color: #fff;
+    font-size: 24px;
+    text-align: center;
+}
+
+.values {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+.values input {
+    width: 60px;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    padding: 0 12px;
+    background: #c1c2c4;
+    font-weight: 600;
+    font-size: 18px;
+    border-bottom: 3px solid #61677A;
+    transition: 300ms;
+}
+.values input:focus {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.content .hexcode {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    color: #fff;
+    font-weight: 600;
+    font-size: 24px;
+    gap: 10px;
+    position: relative;
+}
+.content .hexcode #hex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    font-size: 20px;
+    color: #c5c5c5;
+    cursor: pointer;
+}
+
+.content .hexcode .active {
+    position: absolute;
+    bottom: 50px;
+    right: 15px;
+    background: #61677A;
+    border-radius: 5px;
+    width: 100px;
+    height: 40px;
+    font-size: 16px;
+    text-align: center;
+    line-height: 40px;
+}
