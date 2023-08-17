@@ -49,15 +49,14 @@ window.addEventListener('DOMContentLoaded', () => {
     })
 })
 
-function copyToClipboard(event) {
+hex.addEventListener('click', function copyToClipboard() {
     let range = document.createRange();
     range.selectNode(hex);
     window.getSelection().removeAllRanges();
     window.getSelection().addRange(range);
     document.execCommand('copy');
     window.getSelection().removeAllRanges();
-}
-
+})
 hex.addEventListener("mouseover", (e) => {
     copy.classList.add('active');
     copy.innerHTML = "Copy!"

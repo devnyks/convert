@@ -6,7 +6,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Noto Sans Mono', monospace;
-    transition: 300ms all;
+    transition: 50ms all;
 }
 
 body {
@@ -52,7 +52,7 @@ body {
     font-weight: 600;
     font-size: 18px;
     border-bottom: 3px solid #61677A;
-    transition: 300ms;
+    transition: 300ms!important;
 }
 .values input:focus {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -90,4 +90,5 @@ body {
     font-size: 16px;
     text-align: center;
     line-height: 40px;
+    transition: 300ms!important;
 }
